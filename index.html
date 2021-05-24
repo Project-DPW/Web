@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tes Ingatan - Nama Kota</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+</head>
+<body>
+   <div>
+       <div>
+           <div>Pilih Ukuran Papan</div>
+       <label class="radio-container">
+           3x3
+            <input type="radio" name="jumlah-petak">
+            <span class="checkmark"></span>
+       </label>
+       <label class="radio-container">
+            4x4
+            <input type="radio" name="jumlah-petak">
+            <span class="checkmark"></span>
+        </label>
+        <label class="radio-container">
+            5x5
+            <input type="radio" name="jumlah-petak">
+            <span class="checkmark"></span>
+        </label>
+        <label class="radio-container">
+            6x6
+            <input type="radio" name="jumlah-petak">
+            <span class="checkmark"></span>
+        </label>
+        <button id="tampilkan-papan">Tampilkan Papan</button>
+    </div> 
+    <div id="papan" class="slide middle">  
+    <div class="matrix">
+      <div id="start" class="popup start"><p>START</p></div>
+      
+        <div id="end" class="popup end">
+            <div class="end-content">
+                <p id="menang" class="pesan-end">Game Over</p>
+                <p id="kalah" class="pesan-end">Kamu Menang!</p>
+            </div>
+       </div>
+    </div>
+    <div class="matrix-info">
+        <div id="score" class="score">score : 0</div>
+        <div id="petak" class="petak"></div>
+    </div>
+    <button class="btn h-float-left" >Kembali ke Opsi</button>
+</div> 
+    </div>
+</body>
+</html>
